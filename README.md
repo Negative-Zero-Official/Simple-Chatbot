@@ -34,7 +34,7 @@ This is a basic chatbot that uses sentence embeddings to find the best response 
 
 ## Example
 
-```sh
+```
 $ python chatbot.py
 Bot: Type "bye" to exit.
 You: Hello
