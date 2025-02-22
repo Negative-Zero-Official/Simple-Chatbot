@@ -1,6 +1,6 @@
-# SimpleChatbot
+# Simple Chatbot
 
-SimpleChatbot is a basic chatbot that uses sentence embeddings to find the best response to user input. It can learn new responses and remember them for future interactions.
+This is a basic chatbot that uses sentence embeddings to find the best response to user input. It can learn new responses and remember them for future interactions.
 
 ## Features
 
