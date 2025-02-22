@@ -31,8 +31,10 @@ class SimpleChatbot:
         if best_score > 0.75:
             return self.responses[best_match]
         else:
-            chatgpt_typing_effect("I don't know how to respond to that. How should I reply? Enter expected output: ")
+            chatgpt_typing_effect("I don't know how to respond to that. How should I reply? Enter expected output: (Type --opt-out if you don't want to add anything to memory)")
             new_response = input()
+            if new_response.lower == "--opt-out":
+                return "Got it. I won't add anything to memory."
             self.train(user_input, new_response)
             return "Got it. I'll remember that next time."
     
