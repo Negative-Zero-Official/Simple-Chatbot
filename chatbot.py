@@ -33,7 +33,7 @@ class SimpleChatbot:
         else:
             chatgpt_typing_effect("I don't know how to respond to that. How should I reply? Enter expected output: (Type --opt-out if you don't want to add anything to memory)", chunk_size = 2)
             new_response = input()
-            if new_response.lower == "--opt-out":
+            if new_response.lower() == "--opt-out":
                 return "Got it. I won't add anything to memory."
             self.train(user_input, new_response)
             return "Got it. I'll remember that next time."
@@ -63,6 +63,6 @@ if __name__=="__main__":
     while True:
         user_input = input("You: ")
         if user_input.lower() == "bye":
-            print("Bot: Goodbye!")
+            chatgpt_typing_effect("Bot: Goodbye!", chunk_size = 2)
             break
         chatgpt_typing_effect(f"Bot: {bot.get_response(user_input)}", chunk_size = 2)
