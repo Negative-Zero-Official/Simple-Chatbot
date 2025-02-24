@@ -19,7 +19,7 @@ This is a basic chatbot that uses sentence embeddings to find the best response 
 1. Clone the repository:
     ```sh
     git clone https://github.com/Negative-Zero-Official/Simple-Chatbot
-    cd SimpleChatbot
+    cd Simple-Chatbot
     ```
 
 2. Run the code:
