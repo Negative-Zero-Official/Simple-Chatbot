@@ -26,6 +26,10 @@ This is a basic chatbot that uses sentence embeddings to find the best response 
     ```sh
     python chatbot.py
     ```
+    OR
+   ```sh
+   python chatbot-gui.py
+   ```
 
 ## Files
 
